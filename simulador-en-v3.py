@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import folium
 from streamlit_folium import folium_static
-from deap import base, creator, tools, algorithms
+#from deap import base, creator, tools, algorithms
 import plotly.express as px
 import ast
 
