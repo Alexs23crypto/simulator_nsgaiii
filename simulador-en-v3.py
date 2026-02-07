@@ -10,7 +10,7 @@ import ast
 from functions import show_map, load_shelters
 
 #Seleccionar los albergues
-def filtrar_albergues_por_ids(pareto_df, albergues_df, idx,
+def filtrar_albergues(pareto_df, albergues_df, idx,
                               shelter_col='Shelter_Indices',
                               id_col='ID_ALBERGUE'):
     # Obtener string con los IDs
