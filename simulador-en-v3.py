@@ -75,7 +75,7 @@ shelter_data = filtrar_albergues(pareto_df,albergues_df,selected_id)
 pareto_df['Color'] = pareto_df['index'].apply(lambda x: 'Selected' if x == selected_id else 'Not selected')
 
 translated_df = pareto_df.rename(columns={
-            'Distance: 'Distance between shelters',
+            'Distance': 'Distance between shelters',
             'Population': 'Seismic vulnerability and risk',
             'Safety': 'Demanded population'
         })
