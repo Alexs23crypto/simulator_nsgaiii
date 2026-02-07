@@ -75,9 +75,9 @@ shelter_data = filtrar_albergues(pareto_df,albergues_df,selected_id)
 pareto_df['Color'] = pareto_df['index'].apply(lambda x: 'Selected' if x == selected_id else 'Not selected')
 
 translated_df = pareto_df.rename(columns={
-            'Objective_1 (Distance)': 'Distance between shelters',
-            'Objective_2 (Population Coverage)': 'Seismic vulnerability and risk',
-            'Objective_3 (Risk/Vulnerability Coverage)': 'Demanded population'
+            'Distance: 'Distance between shelters',
+            'Population': 'Seismic vulnerability and risk',
+            'Safety': 'Demanded population'
         })
 
 # Create the 3D Pareto Front plot
