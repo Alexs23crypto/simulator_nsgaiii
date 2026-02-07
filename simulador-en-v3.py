@@ -46,7 +46,7 @@ elif selected_level == "Disastrous":
 
 albergues_df = load_shelters()
 
-pareto_df['Decision_Variables'] = pareto_df['Decision_Variables'].apply(ast.literal_eval)
+pareto_df['Shelter_Indices'] = pareto_df['Shelter_Indices'].apply(ast.literal_eval)
 pareto_df = pareto_df.reset_index()
 
 shelter_data = filtrar_albergues(pareto_df,albergues_df,0)
