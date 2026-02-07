@@ -10,16 +10,17 @@ import ast
 from functions import show_map, load_shelters
 
 #Seleccionar los albergues
-def filtrar_albergues(pareto_df,albergues_df,idx):
-    seleccion = pareto_df.loc[idx, 'Decision_Variables']
-    
-    if len(seleccion) != len(albergues_df):
-        raise ValueError("La longitud de Decision_Variables no coincide con el número de albergues.")
-    
-    # Convertir lista en array de NumPy y usarlo como filtro booleano
-    seleccion = np.array(seleccion, dtype=bool)
-    
-    return albergues_df[seleccion].copy()
+def filtrar_albergues_por_ids(pareto_df, albergues_df, idx,
+                              shelter_col='Shelter_Indices',
+                              id_col='ID_ALBERGUE'):
+    # Obtener string con los IDs
+    seleccion = pareto_df.loc[idx, shelter_col]
+
+    # String → array NumPy de IDs
+    seleccion = np.fromstring(seleccion.strip('[]'), sep=',', dtype=int)
+
+    # Filtrar dataframe completo (NO se retorna el booleano)
+    return albergues_df[albergues_df[id_col].isin(seleccion)].copy()
 
 # Streamlit Interface
 st.title("Shelter Location Simulator")
