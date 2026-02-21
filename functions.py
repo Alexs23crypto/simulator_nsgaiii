@@ -36,12 +36,12 @@ def build_popup(row):
 def show_map(selected_shelters):
     m = folium.Map(location=[-12.0464, -77.0428], zoom_start=10)
     
-    municipality = folium.FeatureGroup(name='Municipality of Lima')
-    nsga = folium.FeatureGroup(name='Algorithm Selection')
+    municipality = folium.FeatureGroup(name='Municipality of Lima and NSGA-III')
+    nsga = folium.FeatureGroup(name='Only NSGA-III')
     
     # NEW LAYR (archivo externo)
     external_layer = folium.FeatureGroup(
-        name='External Layer',
+        name='Municipality of Lima',
         show=False  # 👈 empieza desactivada
     )
 
@@ -82,7 +82,7 @@ def show_map(selected_shelters):
 
         folium.CircleMarker(
             location=[albergue['LATITUD'], albergue['LONGITUD']],
-            radius=4,
+            radius=3,
             color='red',
             fill=True,
             fill_color='red',
