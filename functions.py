@@ -34,17 +34,29 @@ def build_popup(row):
     """
 
 
+import pandas as pd
+import folium
+from streamlit_folium import folium_static
+
 def show_map(selected_shelters):
     m = folium.Map(location=[-12.0464, -77.0428], zoom_start=10)
     
     municipality = folium.FeatureGroup(name='Municipality of Lima')
     nsga = folium.FeatureGroup(name='Algorithm Selection')
+    
+    # NEW LAYR (archivo externo)
+    external_layer = folium.FeatureGroup(
+        name='External Layer',
+        show=False  # 👈 empieza desactivada
+    )
 
+    # =========================
+    # OLD
+    # =========================
     for _, albergue in selected_shelters.iterrows():
         popup_text = build_popup(albergue)
 
         if albergue['ALBERGUE_MUNI'] == 1:
-            # Puntos Municipalidad
             folium.CircleMarker(
                 location=[albergue['LATITUD'], albergue['LONGITUD']],
                 radius=5,
@@ -55,7 +67,6 @@ def show_map(selected_shelters):
                 popup=popup_text
             ).add_to(municipality)
         else:
-            # Puntos NSGA-II
             folium.CircleMarker(
                 location=[albergue['LATITUD'], albergue['LONGITUD']],
                 radius=3,
@@ -66,7 +77,31 @@ def show_map(selected_shelters):
                 popup=popup_text
             ).add_to(nsga)
 
+    # =========================
+    # ADD NEW FILE
+    # =========================
+    external_df = pd.read_excel("albergues_muni.xlsx")  # 🔹 Cambia la ruta
+
+    for _, albergue in external_df.iterrows():
+        popup_text = build_popup(albergue)
+
+        folium.CircleMarker(
+            location=[albergue['LATITUD'], albergue['LONGITUD']],
+            radius=4,
+            color='red',
+            fill=True,
+            fill_color='red',
+            fill_opacity=0.7,
+            popup=popup_text
+        ).add_to(external_layer)
+
+    # =========================
+    # ADD NEW
+    # =========================
     municipality.add_to(m)
     nsga.add_to(m)
-    folium.LayerControl(position='topright').add_to(m)
+    external_layer.add_to(m)
+
+    folium.LayerControl(position='topright', collapsed=False).add_to(m)
+
     folium_static(m)
