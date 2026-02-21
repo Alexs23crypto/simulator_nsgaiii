@@ -108,7 +108,7 @@ fig.update_layout(
         )
 
 fig.update_traces(
-  marker=dict(size=3),
+  marker=dict(size=5),
     hovertemplate="<br>".join([
         "Solution: %{customdata[0]}",  # Show Index on hover
         "Distance between shelters: %{x}",
