@@ -33,11 +33,6 @@ def build_popup(row):
     </table>
     """
 
-
-import pandas as pd
-import folium
-from streamlit_folium import folium_static
-
 def show_map(selected_shelters):
     m = folium.Map(location=[-12.0464, -77.0428], zoom_start=10)
     
