@@ -75,7 +75,7 @@ def show_map(selected_shelters):
     # =========================
     # ADD NEW FILE
     # =========================
-    external_df = pd.read_excel("albergues_muni.xlsx")  # 🔹 Cambia la ruta
+    external_df = pd.read_excel("albergues_muni.xlsx")
 
     for _, albergue in external_df.iterrows():
         popup_text = build_popup(albergue)
