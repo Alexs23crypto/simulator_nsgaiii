@@ -4,7 +4,7 @@ import folium
 from streamlit_folium import folium_static
 
 def load_shelters():
-    return pd.read_excel("shelters_lima.xlsx")
+    return pd.read_excel("app/data_app/shelters_lima.xlsx")
     #return pd.read_excel("albergues_select_nsga.xlsx")
 
 def build_popup(row):
@@ -75,7 +75,7 @@ def show_map(selected_shelters):
     # =========================
     # ADD NEW FILE
     # =========================
-    external_df = pd.read_excel("albergues_muni.xlsx")
+    external_df = pd.read_excel("app/data_app/albergues_muni.xlsx")
 
     for _, albergue in external_df.iterrows():
         popup_text = build_popup(albergue)
