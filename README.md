@@ -1,6 +1,6 @@
-# 🏙️ Shelter Optimization Simulator using NSGA-II
+# 🏙️ Shelter Optimization Simulator using NSGA-III
 
-This project implements a multi-objective optimization model based on the NSGA-II algorithm to support decision-making in the selection of optimal emergency shelters.
+This project implements a multi-objective optimization model based on the NSGA-III algorithm to support decision-making in the selection of optimal emergency shelters.
 
 The application is deployed using Streamlit, allowing users to interactively explore different optimization scenarios based on risk, vulnerability, and population criteria.
 
