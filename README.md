@@ -1,4 +1,4 @@
-# 🏙️ Shelter Optimization Simulator using NSGA-III
+# 🏙️ Scenario-adaptive multi-objective optimization for post-earthquake shelter planning in Lima, Peru
 
 This project implements a multi-objective optimization model based on the NSGA-III algorithm to support decision-making in the selection of optimal emergency shelters.
 
