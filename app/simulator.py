@@ -37,19 +37,19 @@ levels = ["Mild", "Moderate", "Severe", "Very Strong","Disastrous"]
 selected_level = st.sidebar.selectbox("Select the danger level", levels)
 
 if selected_level == "Mild":  
-    pareto_df = pd.read_csv('pareto_front_leve_full.csv')
+    pareto_df = pd.read_csv('app/data_app/pareto_front_leve_full.csv')
     
 elif selected_level == "Moderate":
-    pareto_df = pd.read_csv('pareto_front_moderado_full.csv')
+    pareto_df = pd.read_csv('app/data_app/pareto_front_moderado_full.csv')
     
 elif selected_level == "Severe":
-    pareto_df = pd.read_csv('pareto_front_fuerte_full.csv')
+    pareto_df = pd.read_csv('app/data_app/pareto_front_fuerte_full.csv')
     
 elif selected_level == "Very Strong":
-    pareto_df = pd.read_csv('pareto_front_muy fuerte_full.csv')
+    pareto_df = pd.read_csv('app/data_app/pareto_front_muy fuerte_full.csv')
 
 elif selected_level == "Disastrous":
-    pareto_df = pd.read_csv('pareto_front_desastroso_full.csv')
+    pareto_df = pd.read_csv('app/data_app/pareto_front_desastroso_full.csv')
 
 albergues_df = load_shelters()
 
