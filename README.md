@@ -86,9 +86,9 @@ data/app_data/
 
 The project uses the NSGA-III (Non-dominated Sorting Genetic Algorithm III) to:
 
-* Maximize distance between shelters
-* Maximize coverage of high-risk and high-vulnerability areas
-* Optimize population coverage
+* Maximize inter-shelter spacing.
+* Maximize population coverage.
+* Maximize safety.
 
 ---
 
