@@ -106,9 +106,9 @@ Main libraries used:
 
 ## 👩‍💻 Authors
 
-**Soledad Espezúa**
-**Amy Checcllo**
-**Alexandra Sanjinez**
+* **Soledad Espezúa**
+* **Amy Checcllo**
+* **Alexandra Sanjinez**
 
 ---
 
