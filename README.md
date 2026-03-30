@@ -106,9 +106,9 @@ Main libraries used:
 
 ## 👩‍💻 Authors
 
-* **Soledad Espezúa**
-* **Amy Checcllo**
-* **Alexandra Sanjinez**
+* **Soledad Espezúa** (s.espezual@up.edu.pe)
+* **Amy Checcllo** (aa.checclloh@alum.up.edu.pe)
+* **Alexandra Sanjinez** (ac.sanjinezm@alum.up.edu.pe)
 
 ---
 
