@@ -28,10 +28,31 @@ The application is deployed using Streamlit, allowing users to interactively exp
 repo/
 │
 ├── app/
-│ ├── simulador.py # Main Streamlit application
-│ ├── functions.py # Helper functions
-│ ├── data_app/ # Data used by the simulator
+│   ├── simulador.py # Main Streamlit application
+│   ├── functions.py # Helper functions
+│   ├── data_app/ # Data used by the simulator
+│   │   ├── albergues_muni.xlsx
+│   │   ├── pareto_front_desastroso_full.csv
+│   │   ├── pareto_front_fuerte_full.csv
+│   │   ├── pareto_front_leve_full.csv
+│   │   ├── pareto_front_moderado_full.csv
+│   │   ├── pareto_front_muy fuerte_full.csv
+│   │   ├── shelters_lima.xlsx
 │
+├── data/
+│   ├── geospatial/
+│   │   ├── manzanas (blocks)/
+│   │   |   ├── manzanas_caracterizadas_lima.zip
+│   │   ├── peru_shapes/
+│   │   |   ├── per_admbnda_adm3_ign_20200714.CPG
+│   │   |   ├── per_admbnda_adm3_ign_20200714.dbf
+│   │   |   ├── per_admbnda_adm3_ign_20200714.prj
+│   │   |   ├── per_admbnda_adm3_ign_20200714.sbn
+│   │   |   ├── per_admbnda_adm3_ign_20200714.sbx
+│   │   |   ├── per_admbnda_adm3_ign_20200714.shp
+│   │   |   ├── per_admbnda_adm3_ign_20200714.shp.xml
+│   │   |   ├── per_admbnda_adm3_ign_20200714.shx
+|
 ├── requirements.txt
 └── README.md
 ```
@@ -85,9 +106,9 @@ data/app_data/
 
 This repository includes geospatial data used to generate the cartographic visualizations presented in the study.
 
-Due to file structure requirements, the shapefiles are provided in compressed format:
+Due to file structure requirements, one of the shapefiles are provided in compressed format:
 
-data/geospatial/manzanas_lima.zip
+data/geospatial/manzanas (blocks)/manzanas_caracterizadas_lima.zip
 
 To use the data:
 
@@ -95,8 +116,14 @@ To use the data:
 2. Extract its contents
 3. Ensure all shapefile components (.shp, .shx, .dbf, .prj, .cpg) are in the same folder
 
-Coordinate system: WGS84 (EPSG:4326)  
-Source: [add your data source here]
+Additional shapefiles used for spatial analysis and cartographic visualization are available in:
+
+data/geospatial/peru_shapes/
+
+These files include administrative boundaries and geographic context for the study area.
+
+Coordinate system: WGS84 (EPSG:32718)
+Source: Metropolitan Information System (IMP)
 
 ---
 
