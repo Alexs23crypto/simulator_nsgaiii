@@ -65,7 +65,7 @@ streamlit run app/simulator.py
 
 ---
 
-## 📊 Data
+## 📊 App Data
 
 The datasets include:
 
@@ -79,6 +79,24 @@ All data used by the app is stored in:
 ```
 data/app_data/
 ```
+---
+
+## 🌍 Geospatial Data
+
+This repository includes geospatial data used to generate the cartographic visualizations presented in the study.
+
+Due to file structure requirements, the shapefiles are provided in compressed format:
+
+data/geospatial/manzanas_lima.zip
+
+To use the data:
+
+1. Download the .zip file
+2. Extract its contents
+3. Ensure all shapefile components (.shp, .shx, .dbf, .prj, .cpg) are in the same folder
+
+Coordinate system: WGS84 (EPSG:4326)  
+Source: [add your data source here]
 
 ---
 
