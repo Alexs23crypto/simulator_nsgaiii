@@ -108,7 +108,9 @@ This repository includes geospatial data used to generate the cartographic visua
 
 Due to file structure requirements, one of the shapefiles are provided in compressed format:
 
+```
 data/geospatial/manzanas (blocks)/manzanas_caracterizadas_lima.zip
+```
 
 To use the data:
 
@@ -118,7 +120,9 @@ To use the data:
 
 Additional shapefiles used for spatial analysis and cartographic visualization are available in:
 
+```
 data/geospatial/peru_shapes/
+```
 
 These files include administrative boundaries and geographic context for the study area.
 
