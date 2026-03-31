@@ -135,6 +135,18 @@ Source: Metropolitan Information System (IMP)
 
 ---
 
+## 🧪 Data Processing
+
+The data preprocessing and feature engineering steps are available in:
+
+```
+src/data_processing/
+```
+
+These scripts include data cleaning, transformation, and computation of key indicators such as risk, vulnerability, and population coverage.
+
+---
+
 ## 🧠 Methodology
 
 The project uses the NSGA-III (Non-dominated Sorting Genetic Algorithm III) to:
