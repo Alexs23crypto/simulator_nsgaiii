@@ -55,7 +55,7 @@ repo/
 |
 ├── src/
 │   ├── data_processing/
-|   |   ├──Potential Shelters Characterization
+|   |   ├──Potential Shelters Characterization.py
 |
 ├── requirements.txt
 └── README.md
