@@ -53,9 +53,17 @@ repo/
 │   │   |   ├── per_admbnda_adm3_ign_20200714.shp.xml
 │   │   |   ├── per_admbnda_adm3_ign_20200714.shx
 |
+│   ├── raw/
+|
 ├── src/
 │   ├── data_processing/
 |   |   ├──Potential Shelters Characterization.py
+|
+│   ├── graphics/
+|   |   ├──Graphic Municipality vs NSGA-III.py
+|
+│   ├── nsga-iii/
+|   |   ├──Main_NSGAIII.py
 |
 ├── requirements.txt
 └── README.md
