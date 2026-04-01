@@ -53,7 +53,24 @@ repo/
 │   │   |   ├── per_admbnda_adm3_ign_20200714.shp.xml
 │   │   |   ├── per_admbnda_adm3_ign_20200714.shx
 |
+│   ├── intermediate/
+│   │   ├── Characterized Shelters Lima/
+│   │   |   ├── Characterized Shelters Lima shapefile.txt
+│   │   ├── Potential Shelters Lima/
+│   │   |   ├── Potential Shelters Lima shapefile.txt
+|
 │   ├── raw/
+│   │   ├── Census Blocks Lima/
+│   │   |   ├── Census Blocks Lima shapefile.txt
+│   │   ├── Census Blocks/
+│   │   |   ├── BD_ManzanasCarac.xlsx
+│   │   ├── MANZANAS/
+│   │   |   ├── MANZANAS shapefile.txt
+│   │   ├── Municipality Shelters/
+│   │   |   ├── ALBERGUES TEMPORALES MUNICIPALIDAD_v2.xlsx
+│   │   ├── Potential Shelters/
+│   │   |   ├── Equipamiento de recreación pública (PLANMET 2040).xlsx
+│   │   |   ├── Equipamiento de deportivo (PLANMET 2040).xlsx
 |
 ├── src/
 │   ├── data_processing/
