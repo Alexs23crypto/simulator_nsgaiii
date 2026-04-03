@@ -23,8 +23,8 @@ from pymoo.operators.mutation.pm import PM
 # CONFIGURATION
 # ─────────────────────────────────────────────────────────────────────────────
 CONFIG = {
-    "n_gen":    100,   # generations per level (increase to 300–500 for better quality)
-    "pop_size": 100,   # individuals per generation
+    "n_gen":    500,   # generations per level (increase to 300–500 for better quality)
+    "pop_size": 200,   # individuals per generation
     "earthquake_risk_levels": {
         "mild":        {"intensity": 0.5, "max_shelter_proportion": 0.0441},  # ~129
         "moderate":    {"intensity": 0.7, "max_shelter_proportion": 0.089},   # ~364
